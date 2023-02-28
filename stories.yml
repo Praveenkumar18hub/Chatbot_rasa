@@ -1,0 +1,50 @@
+
+version: "2.0"
+
+stories:
+  - story: greet and goodbye
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: goodbye
+      - action: utter_goodbye
+
+  # - story: number
+  #   steps:
+  #     - intent: number1
+  #     - slot_was_set:
+  #         - number1: 5
+  #         - number2: 3
+  #     - action: utter_number1
+  
+  - story: addition
+    steps:
+      - intent: add
+      - slot_was_set:
+          - number1: 5
+          - number2: 3
+      - action: utter_add
+      
+  - story: subtraction
+    steps:
+      - intent: subtract
+      - slot_was_set:
+          - number1: 8
+          - number2: 4
+      - action: utter_subtract
+      
+  - story: multiplication
+    steps:
+      - intent: multiply
+      - slot_was_set:
+          - number1: 7
+          - number2: 2
+      - action: utter_multiply
+      
+  - story: division
+    steps:
+      - intent: divide
+      - slot_was_set:
+          - number1: 10
+          - number2: 2
+      - action: utter_divide

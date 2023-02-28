@@ -1,0 +1,59 @@
+intents:
+  - greet
+  - goodbye
+  - add
+  - subtract
+  - multiply
+  - divide
+
+entities:
+  - number
+  - number1
+  - number2
+
+responses:
+  utter_greet:
+  - text: "Hello! I'm a simple arithmetic chatbot. How can I help you today?"
+  
+  utter_goodbye:
+  - text: "Goodbye! Thanks for chatting with me."
+
+  # utter_number1:
+  # - text: "The first number is number1"
+
+  # utter_number2:
+  # - text: "The second number is number2"
+  
+  utter_add:
+  - text: "The sum is 6."
+  
+  utter_subtract:
+  - text: "The difference is 2."
+  
+  utter_multiply:
+  - text: "The product is 8."
+  
+  utter_divide:
+  - text: "The quotient is 2."
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_add
+  - utter_subtract
+  - utter_multiply
+  - utter_divide
+
+
+slots:
+   number1:
+      type: float
+      mappings:
+      - type: from_entity
+        entity: number1
+
+   number2:
+      type: float
+      mappings:
+      - type: from_entity
+        entity: number2

@@ -1,0 +1,47 @@
+
+version: "2.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Hi
+      - Hello
+      - Hey
+      
+  - intent: goodbye
+    examples: |
+      - Goodbye
+      - Bye
+      - See you later
+
+  # - intent: number1
+  #   examples: |
+  #     - the first number is [5](number1) and [3](number)
+      
+  # - intent: number2
+  #   examples: |
+  #     - The second number is [8](number) and [4](number)
+      
+  - intent: add
+    examples: |
+      - add [4](number1) and [2](number2)
+      - What is the sum of [5](number1) and [3](number2)?
+      - Add [7](number1) and [8](number2) for me
+      - Calculate [2](number1) plus [4](number2)
+      
+  - intent: subtract
+    examples: |
+      - What is [4](number) minus [2](number)?
+      - Subtract [3](number) from [10](number)
+      - Calculate [12](number) take away [5](number)
+      
+  - intent: multiply
+    examples: |
+      - What is the product of [7](number) and [2](number)?
+      - Multiply [4](number) and [6](number) for me
+      - Calculate [3](number) times [9](number)
+      
+  - intent: divide
+    examples: |
+      - What is [10](number) divided by [2](number)?
+      - Divide [15](number) by [5
